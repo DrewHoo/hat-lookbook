@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Big-Head Hat Lookbook</title>
-<meta name="description" content="A curated hat lookbook for a size-8 head — Patagonia-outdoorsy, Crimson Tide (no MAGA, no '47), and irreverent dad hats — every listing verified live and graded for a big head.">
+<meta name="description" content="A curated hat lookbook for a measured 7¾–8 head — Patagonia-outdoorsy, Crimson Tide (no MAGA, no '47), and irreverent — every listing verified live and sorted by whether it comes in your real size.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A2%3C/text%3E%3C/svg%3E">
 <meta property="og:title" content="The Big-Head Hat Lookbook">
-<meta property="og:description" content="15 hats verified live and graded for a size-8 head: Patagonia-outdoorsy, Crimson Tide without the MAGA look, and irreverent dad hats.">
+<meta property="og:description" content="18 hats verified live and sorted by whether they come in a real size 7¾–8: Patagonia-outdoorsy, Crimson Tide without the MAGA look, and irreverent.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -26,7 +26,7 @@
   }
   @media (prefers-color-scheme:dark){
     :root{
-      --bg:#17151220; --bg:#171512; --bg2:#1f1c18; --ink:#f0ebe1; --ink2:#a99f8e; --line:#332e27;
+      --bg:#171512; --bg2:#1f1c18; --ink:#f0ebe1; --ink2:#a99f8e; --line:#332e27;
       --card:#211d18; --card-line:#352f27; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.4);
       --accent:#8fb89c;
       --fits:#6fce9a; --fits-bg:#183226;
@@ -48,21 +48,19 @@
   body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   a{color:inherit}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
-  /* ---------- masthead ---------- */
   header.mast{padding:56px 20px 30px;text-align:center;position:relative}
   .kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink2);font-weight:600}
   h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.3rem,6vw,4rem);line-height:1.02;margin:.35em 0 .3em;letter-spacing:-.01em}
-  .sub{max-width:640px;margin:0 auto;color:var(--ink2);font-size:clamp(1rem,2.4vw,1.18rem)}
+  .sub{max-width:660px;margin:0 auto;color:var(--ink2);font-size:clamp(1rem,2.4vw,1.18rem)}
   .sub b{color:var(--ink);font-weight:600}
   .pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:22px 0 0}
   .pill{background:var(--card);border:1px solid var(--card-line);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;box-shadow:var(--shadow)}
   .pill span{color:var(--ink2);font-weight:500}
-  /* ---------- lens panel ---------- */
   .lens{max-width:var(--maxw);margin:26px auto 8px;padding:18px 20px;background:var(--card);border:1px solid var(--card-line);border-radius:var(--radius);box-shadow:var(--shadow)}
   .lens-top{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
   .lens h2{font-size:15px;margin:0;font-weight:700;display:flex;align-items:center;gap:9px}
   .lens h2 .dot{font-size:18px}
-  .lens p{margin:8px 0 0;color:var(--ink2);font-size:13.5px;flex-basis:100%;max-width:70ch}
+  .lens p{margin:8px 0 0;color:var(--ink2);font-size:13.5px;flex-basis:100%;max-width:78ch}
   .ruler{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink2);font-weight:600}
   .ruler b{color:var(--ink)}
   .chips{display:flex;flex-wrap:wrap;gap:8px;margin-left:auto}
@@ -79,15 +77,13 @@
   body[data-filter="fits"] .chip[data-f="fits"] .ic,
   body[data-filter="adjustable"] .chip[data-f="adjustable"] .ic,
   body[data-filter="measure"] .chip[data-f="measure"] .ic{color:inherit}
-  /* ---------- sections ---------- */
   section.bucket{padding:44px 0 12px}
-  .bhead{max-width:760px;margin:0 auto 26px;text-align:center;padding:0 20px}
+  .bhead{max-width:800px;margin:0 auto 26px;text-align:center;padding:0 20px}
   .btag{display:inline-block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:5px 12px;border-radius:999px;margin-bottom:12px}
   .bhead h2{font-family:var(--serif);font-size:clamp(1.7rem,4.4vw,2.5rem);margin:.1em 0 .35em;font-weight:600;line-height:1.05}
   .bhead p{color:var(--ink2);font-size:15.5px;margin:0}
   .bhead p b{color:var(--ink);font-weight:600}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
-  /* section moods */
   #outdoorsy{background:linear-gradient(180deg,transparent,var(--bg2) 60%,transparent)}
   #outdoorsy .btag{background:var(--fits-bg);color:var(--fits)}
   #crimson .btag{background:#f0dcda;color:#8f2d2a}
@@ -95,7 +91,6 @@
   @media (prefers-color-scheme:dark){#crimson .btag{background:#38201f;color:#e59b98}#irreverent .btag{background:#26203a;color:#b8a6e6}}
   :root[data-theme="dark"] #crimson .btag{background:#38201f;color:#e59b98}
   :root[data-theme="dark"] #irreverent .btag{background:#26203a;color:#b8a6e6}
-  /* ---------- card ---------- */
   .card{background:var(--card);border:1px solid var(--card-line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
   .card:hover{transform:translateY(-3px);box-shadow:0 4px 10px rgba(40,32,20,.08),0 18px 44px rgba(40,32,20,.14)}
   body[data-filter="fits"] .card:not([data-fit="fits"]),
@@ -122,7 +117,7 @@
   .specs{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
   .spec{font-size:11px;background:var(--bg2);border:1px solid var(--card-line);border-radius:6px;padding:3px 8px;color:var(--ink2)}
   .fitnote{font-size:12.5px;line-height:1.45;padding:9px 11px;border-radius:10px;margin-bottom:10px;border:1px solid transparent}
-  .fitnote.fits{background:var(--fits-bg);color:var(--fits);border-color:transparent}
+  .fitnote.fits{background:var(--fits-bg);color:var(--fits)}
   .fitnote.adjustable{background:var(--adj-bg);color:var(--adj)}
   .fitnote.measure{background:var(--meas-bg);color:var(--meas)}
   .fitnote b{font-weight:800}
@@ -130,21 +125,18 @@
   .buy{margin-top:auto;display:block;text-align:center;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:700;font-size:14px;padding:11px;border-radius:11px;transition:.15s}
   .buy:hover{opacity:.87}
   .buy .arr{opacity:.6}
-  /* ---------- universal fix callout ---------- */
   .fix{max-width:var(--maxw);margin:8px auto 0;padding:22px 24px;background:linear-gradient(120deg,var(--card),var(--bg2));border:1px dashed var(--accent);border-radius:var(--radius);display:flex;gap:20px;align-items:flex-start;box-shadow:var(--shadow)}
   .fix .emoji{font-size:34px;line-height:1}
   .fix h3{margin:0 0 6px;font-family:var(--serif);font-size:1.3rem;font-weight:600}
-  .fix p{margin:0;color:var(--ink2);font-size:14px;max-width:75ch}
+  .fix p{margin:0;color:var(--ink2);font-size:14px;max-width:78ch}
   .fix p b{color:var(--ink)}
-  /* ---------- footer ---------- */
   footer{margin-top:40px;padding:36px 20px 60px;border-top:1px solid var(--line);text-align:center;color:var(--ink2);font-size:13px}
-  footer .wrap{max-width:720px}
+  footer .wrap{max-width:740px}
   footer h4{color:var(--ink);font-size:14px;margin:0 0 8px;letter-spacing:.04em;text-transform:uppercase}
   footer p{margin:0 0 12px;line-height:1.6}
   footer a{color:var(--accent);font-weight:600;text-decoration:none}
   .asof{display:inline-block;margin-top:6px;font-size:12px;background:var(--card);border:1px solid var(--card-line);border-radius:999px;padding:5px 13px}
   .themebtn{position:fixed;top:14px;right:14px;z-index:40;width:38px;height:38px;border-radius:50%;border:1px solid var(--card-line);background:var(--card);color:var(--ink);cursor:pointer;font-size:16px;box-shadow:var(--shadow)}
-  /* ---------- lightbox ---------- */
   .lb{position:fixed;inset:0;background:rgba(15,12,8,.9);display:none;align-items:center;justify-content:center;z-index:100;padding:20px;cursor:zoom-out}
   .lb.on{display:flex}
   .lb img{max-width:94vw;max-height:90vh;object-fit:contain;border-radius:10px;background:#fff}
@@ -161,12 +153,12 @@
 <button class="themebtn" id="themebtn" title="Toggle light/dark" aria-label="Toggle theme">◑</button>
 
 <header class="mast">
-  <div class="kicker">A shopping lookbook · sized for a big head</div>
+  <div class="kicker">A shopping lookbook · built around a big-head fit</div>
   <h1>The Big-Head<br>Hat Lookbook</h1>
-  <p class="sub">Fifteen hats across three moods — <b>Patagonia-outdoorsy</b>, <b>Crimson&nbsp;Tide</b> (no MAGA, no&nbsp;'47), and <b>irreverent</b> — every listing opened, verified live, and graded against a <b>size&nbsp;8</b> head, because a hat that doesn't fit isn't a hat.</p>
+  <p class="sub">Caps across three moods — <b>Patagonia-outdoorsy</b>, <b>Crimson&nbsp;Tide</b> (no MAGA, no&nbsp;'47), and <b>irreverent</b> — every listing verified live and sorted by the one thing that matters for a measured <b>7¾–8</b> head: <b>whether it comes in your real size.</b> Because no one-size hat has ever fit you.</p>
   <div class="pills">
-    <div class="pill" id="pill-total">15 hats</div>
-    <div class="pill" id="pill-fits"><span>✓</span> fit confirmed</div>
+    <div class="pill" id="pill-total">18 hats</div>
+    <div class="pill" id="pill-fits"><span>●</span> truly sized</div>
     <div class="pill">3 vibes</div>
     <div class="pill"><span>verified</span> Jul 2026</div>
   </div>
@@ -175,50 +167,47 @@
 <div class="lens wrap">
   <div class="lens-top">
     <h2><span class="dot">🧢</span> The big-head fit lens</h2>
-    <div class="ruler">Your size&nbsp;<b>8</b> ≈ <b>25″ / 63.5&nbsp;cm</b> around</div>
+    <div class="ruler">You measured&nbsp;<b>7¾–8</b> ≈ <b>61.5–63.5&nbsp;cm</b></div>
     <div class="chips" role="group" aria-label="Filter by fit">
       <button class="chip" data-f="all">All <span class="n" id="c-all"></span></button>
-      <button class="chip" data-f="fits"><span class="ic">●</span> Fits your 8 <span class="n" id="c-fits"></span></button>
-      <button class="chip" data-f="adjustable"><span class="ic">◐</span> Opens to it <span class="n" id="c-adjustable"></span></button>
-      <button class="chip" data-f="measure"><span class="ic">▲</span> Measure first <span class="n" id="c-measure"></span></button>
+      <button class="chip" data-f="fits"><span class="ic">●</span> Sized to fit <span class="n" id="c-fits"></span></button>
+      <button class="chip" data-f="adjustable"><span class="ic">◐</span> Roomy one-size <span class="n" id="c-adjustable"></span></button>
+      <button class="chip" data-f="measure"><span class="ic">▲</span> Runs snug <span class="n" id="c-measure"></span></button>
     </div>
   </div>
-  <p>Most "one-size" snapbacks stop near <b>24″ (≈7⅝)</b> — an inch short of you — which is why so many hats pinch. Each card is tagged: <b style="color:var(--fits)">Fits your 8</b> = true size&nbsp;8 or big-head sizing, <b style="color:var(--adj)">Opens to it</b> = an adjustable that reaches ~25″, <b style="color:var(--meas)">Measure first</b> = gorgeous but tops out right around your limit. Tap a chip to filter.</p>
+  <p>You measured 7¾–8, and by hard experience <b>no one-size hat has ever fit you</b> — so every cap is sorted by how it's sized. <b style="color:var(--fits)">Sized to fit you</b> = comes in your actual size (a true numeric fitted, or a brand XL/XXL/L cut for a big head) — the safe bets, and most of this list. <b style="color:var(--adj)">Roomy one-size</b> = no size to choose, but the roomiest of the lot (high crown, knit stretch, a strap to ~64&nbsp;cm) — a calculated gamble, given your track record. <b style="color:var(--meas)">Runs snug</b> = tops out right around your head; shown honestly. Tap a chip to filter.</p>
 </div>
 
-<!-- OUTDOORSY -->
 <section class="bucket" id="outdoorsy">
   <div class="bhead">
     <span class="btag">Vibe 01 · Patagonia-outdoorsy</span>
     <h2>The outdoors, in your actual size</h2>
-    <p>Here's the hard truth the research turned up: <b>Patagonia's entire hat line is published to top out at ~24″ (≈7⅝)</b> — a full inch under you. So this bucket leads with the <b>one Patagonia that genuinely fits</b> (its high-crown trucker, backed by a big-headed reviewer), then goes Patagonia-<i>adjacent</i> to the brands that actually size to an 8.</p>
+    <p>You own and love a Tilley, so the 360° brims sit this one out. And the hard truth stands: <b>Patagonia's cap line tops out near 24″ (≈7⅝)</b> — under you — so their trucker is a roomy gamble, not a fit. The wins are brands that print a real <b>size</b> on the box: Stormy Kromer's numeric fitted, Kavu's actual S/M/L, Oddjob's XL. <b>On Adidas</b> — you said you'd take it — their everyday caps stop ~7⅝, but their true-<i>fitted</i> line does reach a real 8, so buy an Adidas <i>fitted</i>, never an adjustable. Purest move of all: a blank earth-tone New Era 59FIFTY, where you just buy “size 8.”</p>
   </div>
   <div class="wrap"><div class="grid" data-grid="outdoorsy"></div></div>
 </section>
 
-<!-- CRIMSON -->
 <section class="bucket" id="crimson">
   <div class="bhead">
     <span class="btag">Vibe 02 · Crimson Tide, minus the MAGA</span>
     <h2>Roll Tide without the red-cap read</h2>
-    <p>The brief: Alabama, but <b>nothing that looks like a bright-red structured MAGA cap</b>, and <b>no '47 brand</b>. The move is throwback fitteds on cream crowns, heritage plaid, and washed denim — red only ever an accent. Two of these are <b>true fitted size 8s</b>; all are officially licensed and none are '47.</p>
+    <p>The brief: Alabama, <b>nothing that looks like a bright-red structured MAGA cap</b>, and <b>no '47 brand</b>. The move is <b>true-fitted 59FIFTYs</b> — you pick 7⅞ or 8, no strap to gamble on — on cream, grey, and camel crowns where red is only an accent. Four of the six come in your exact numeric size; all are officially licensed and none are '47.</p>
   </div>
   <div class="wrap"><div class="grid" data-grid="crimson"></div></div>
 </section>
 
-<!-- IRREVERENT -->
 <section class="bucket" id="irreverent">
   <div class="bhead">
     <span class="btag">Vibe 03 · Irreverent</span>
     <h2>Big Dad Hat energy, with a wink</h2>
-    <p>Built off the exact hat you linked — the <b>Oddjob Big Dad Hat Suede Bill</b> — plus the real <b>"Solvem Probler"</b> pun (it exists!) and other dry, clever graphics. The catch is wit-vs-fit: most novelty caps stop around 23.5″. So each is graded, and there's a bridge that gets you <i>your</i> joke at a guaranteed fit 👇</p>
+    <p>Built off the exact <b>Oddjob Big Dad Hat</b> you linked, plus the real <b>“Solvem Probler”</b> pun. The catch was always wit-vs-fit — the funniest stock designs are one-size. The fix, now leading the bucket: <b>fitted novelty 59FIFTYs</b> (SpongeBob &amp; co.) that come in a true size 8, and a <b>custom-embroidery fitted</b> where your own line goes on a size-8 hat. Your joke, minus the one-size gamble 👇</p>
   </div>
   <div class="wrap">
     <div class="fix">
       <div class="emoji">🧵</div>
       <div>
-        <h3>The universal fix: buy it Blank, add your own joke</h3>
-        <p>The perfect-wit hats (Altru's low-profile, any AI/dev in-joke) tend to be low-profile one-sizes that pinch a size 8. The clean solve: order the <b>Oddjob Big Dad Hat in "Blank"</b> — it fits you (XL covers 7½–8¼) and Oddjob's own logos are, in your words, mediocre anyway — then send it to a local or Etsy embroidery shop for <b>"Solvem Probler"</b> or whatever line you like. Exact vibe, exact fit, ~$50 + ~$15 embroidery.</p>
+        <h3>The universal fix: your joke, on a hat that's actually your size</h3>
+        <p>Two clean routes to <b>“Solvem Probler”</b> (or any line) at a guaranteed fit: order the <b>Oddjob Big Dad Hat in “Blank”</b> (fits you; Oddjob adds custom embroidery for ~$40), or the <b>KB Ethos custom fitted below</b>, which ships as a true <b>size 8</b> with your text baked in for ~$25. Either way you skip the one-size lottery — and Oddjob's own logos are, in your words, mediocre anyway.</p>
       </div>
     </div>
     <div class="grid" data-grid="irreverent" style="margin-top:22px"></div>
@@ -228,10 +217,10 @@
 <footer>
   <div class="wrap">
     <h4>How this was made</h4>
-    <p>Every hat here was opened in a live browser, checked for stock, and read straight from the store's own product data — price, sizes, colors, and images. Fit grades come from published size charts, the size-8 ≈ 25″ standard, and real reviews (Patagonia's Broadcaster earned its "fits" grade from a 6'4″–6'6″ buyer who wrote <i>"finally a Patagonia hat that fits"</i>). Where a listing was out of stock (a couple of tempting truckers), it was cut rather than shown dead.</p>
+    <p>Every hat was opened in a live browser, checked for stock, and read from the store's own product data. Fit grades come from each brand's real size chart and the size-8 = 25″ / 63.5 cm standard. Where a listing was out of stock or the wrong style (a couple of truckers; the Tilley-style 360° brims you already own), it was cut rather than shown. On <b>Adidas</b>: their everyday and golf caps top out around 7⅝, but their true-fitted collegiate line runs to a genuine size 8 — so Adidas works only if you buy a fitted.</p>
     <h4 style="margin-top:22px">Fine print</h4>
-    <p>Non-commercial, no affiliate links or trackers — every button is the canonical product page. Prices and stock drift; confirm at checkout, and <b>select size 8 (or XL) before you pay</b>. Shops worth watching for restocks: the official <a href="https://shop.rolltide.com" target="_blank" rel="noopener">Roll Tide store</a> (Nike houndstooth campus hat sells out fast) and <a href="https://bighatstore.com" target="_blank" rel="noopener">Big Hat Store</a> for novelty styles in a true 8.</p>
-    <span class="asof">Listings & prices verified 13 Jul 2026</span>
+    <p>Non-commercial, no affiliate links or trackers — every button is the canonical product page. Prices and stock drift; confirm at checkout, and <b>select your size (7⅞ / 8, or XL) before you pay</b>. On true-fitted caps, 7⅞ (62.5 cm) is dead-center for you and 8 (63.5 cm) is the top of your range. Shops worth watching: <a href="https://bighatstore.com" target="_blank" rel="noopener">Big Hat Store</a> for XXL flexfit blanks, and <a href="https://www.ebbets.com/collections/ballcaps-blanks" target="_blank" rel="noopener">Ebbets Field Flannels</a> for true-fitted wool ballcaps (size 8 sells out — watch stock).</p>
+    <span class="asof">Listings &amp; prices verified 13 Jul 2026</span>
   </div>
 </footer>
 
@@ -240,26 +229,29 @@
 <script>
 const SETS = [
   // ---------------- OUTDOORSY ----------------
-  {bucket:"outdoorsy",fit:"fits",title:"Broadcaster High-Crown Trucker",brand:"Patagonia",shop:"patagonia.com",url:"https://www.patagonia.com/product/broadcaster-high-crown-trucker-hat/33395.html",price:"39",specs:["High-crown snapback","Organic cotton / mesh","Multiple colors"],fitNote:"The Patagonia that actually fits. A 6'4\"–6'6\" reviewer: <b>“finally a Patagonia hat that fits larger heads.”</b> High crown = the room a size 8 needs.",note:"Your answer to “do Patagonia hats fit me?” — this is the one. Snapback, recycled materials, the P-6 look you wanted, in a crown built tall enough for you.",imgs:["img/broadcaster_1.jpg","img/broadcaster_2.jpg","img/broadcaster_3.jpg"]},
-  {bucket:"outdoorsy",fit:"fits",title:"T3 Wanderer Hat",brand:"Tilley",shop:"tilley.com",url:"https://www.tilley.com/products/t3-wanderer-hat",price:"99",specs:["True sizes 7–8⅛","Washed cotton duck","UPF 50+ · packable"],fitNote:"<b>Genuinely sized</b> to 8⅛, so a size 8 sits mid-range — plus Tilley's built-in 2-finger allowance. No adjustment guesswork.",note:"The Patagonia-casual look that fits your head. Enzyme-washed cotton-duck travel/bucket hat, it floats, lifetime guarantee, made in Canada. Deep earthy palette.",imgs:["https://cdn.shopify.com/s/files/1/0553/7218/5768/files/H05HT2002_20T3_20VINTAGE_20WANDERER_20HAT_20OLIVE_084_c93458ff-1342-4431-869b-891c2d6075a9.jpg","https://cdn.shopify.com/s/files/1/0553/7218/5768/files/H05HT2002_20T3_20VINTAGE_20WANDERER_20HAT_20OLIVE_120_2aeda373-279b-4f6d-bcda-5c39d5ba1def.jpg"]},
-  {bucket:"outdoorsy",fit:"fits",title:"LTM6 Airflo Broad-Brim Sun Hat",brand:"Tilley",shop:"tilley.com",url:"https://www.tilley.com/products/ltm6-airflo-sun-hat",price:"99",specs:["Sizes 6⅞ → 8+","Nylamtium · UPF 50+","Mesh-vented · floats"],fitNote:"Sizes <b>past</b> a true 8 — it literally lists an “8+.” The most headroom of anything here.",note:"For real sun days: technical broad brim with a vented crown and wind cord. The expedition-grade version of the outdoorsy look — and it sizes beyond you.",imgs:["https://cdn.shopify.com/s/files/1/0553/7218/5768/files/HT1006AIRFLOBROADBRIMLTM6OLIVE_031_65eb22d5-bb4e-4bdb-bac9-34cd761c03ce.jpg","https://cdn.shopify.com/s/files/1/0553/7218/5768/files/H99HT1006LTM6AIRFLOSUNHATOLIVE_015.jpg"]},
-  {bucket:"outdoorsy",fit:"fits",title:"Big Hiking Hat",brand:"Oddjob Hats",shop:"oddjobhats.com",url:"https://www.oddjobhats.com/products/big-hiking-hat",price:"60",specs:["XL 7½–8¼ · XXL 8¼–9¼","Ripstop nylon · UPF 30","Army / Light Grey"],fitNote:"<b>Built for big heads</b> — the whole brand exists for this. XL covers your 8; XXL for 8¼+.",note:"Outdoorsy tech from the brand you already trust: ultralight ripstop, sun protection, a longer bill for coverage. Earthy army or grey.",imgs:["https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DSC09775.jpg","https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DSC09580.jpg","https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DSC09776.jpg"]},
-  {bucket:"outdoorsy",fit:"adjustable",title:"Ultra Adventure Hat",brand:"Sunday Afternoons",shop:"sundayafternoons.com",url:"https://www.sundayafternoons.com/products/ultra-adventure-hat",price:"60",specs:["L/XL 23–25″","Pull-tab micro-adjust","UPF 50+ · neck cape"],fitNote:"L/XL tops out at exactly <b>25″ = your 8</b>, and the pull-tab cinches to fit. Order L/XL; you sit right at the ceiling, so it seats without perching.",note:"The value UPF trail/fishing hat — so airy you forget it's on. Removable neck cape, muted earthy colorways, half the price of the Tilleys.",imgs:["https://cdn.shopify.com/s/files/1/0506/6774/9566/files/ultra-adventure-hat-cascades-front-op2-ss26-2500px.jpg","https://cdn.shopify.com/s/files/1/0506/6774/9566/files/ss25-lifestyle-ultra-adventure-hat-cinder-2500px.jpg"]},
-  {bucket:"outdoorsy",fit:"measure",title:"P-6 Logo LoPro Trucker Hat",brand:"Patagonia",shop:"patagonia.com",url:"https://www.patagonia.com/product/p-6-logo-lopro-trucker-hat/38283.html",price:"39",specs:["One-size snapback","Line caps ~24″ (≈7⅝)","White / Black / Grey / Navy"],fitNote:"The honest gamble: Patagonia's line tops out at <b>24″, an inch under you</b>. The roomiest of their snapbacks, but best case it perches shallow. Want a Patagonia that truly fits? Get the Broadcaster above.",note:"The iconic Patagonia trucker you probably pictured — NetPlus recycled-net brim, organic-cotton front. Shown honestly: the brand you named, but the fit risk of this bucket.",imgs:["img/plopro_1.jpg","img/plopro_2.jpg","img/plopro_3.jpg"]},
+  {bucket:"outdoorsy",fit:"fits",title:"Big Hiking Hat",brand:"Oddjob Hats",shop:"oddjobhats.com",url:"https://www.oddjobhats.com/products/big-hiking-hat",price:"60",specs:["XL 7½–8¼ · XXL 8¼–9¼","Ripstop nylon · UPF 30","Army / Light Grey"],fitNote:"<b>Sized for big heads</b> — the whole brand exists for this. XL brackets both your 7¾ and 8.",note:"Outdoorsy tech from the brand you already trust: ultralight ripstop, sun protection, a longer bill for coverage. Order XL. Earthy army or grey.",imgs:["https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DSC09775.jpg","https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DSC09580.jpg","https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DSC09776.jpg"]},
+  {bucket:"outdoorsy",fit:"fits",title:"The Trail Cap",brand:"Stormy Kromer",shop:"stormykromer.com",url:"https://www.stormykromer.com/the-trail-cap/",price:"50",specs:["True-fitted 6⅞ → 8","Waxed cotton · water-repellent","Stone / Fern / Red Clay / Navy"],fitNote:"<b>A true numeric fitted, all the way to size 8</b> — you buy the number, no strap. SK runs small, so order the 8.",note:"A genuinely-sized outdoor cap with real field character: 3-season waxed cotton, water-repellent, a fold-down tie earband. Hand-sewn in Michigan, earthy field palette.",imgs:["img/stormy_1.png","img/stormy_2.png"]},
+  {bucket:"outdoorsy",fit:"fits",title:"Synthetic Strapcap",brand:"Kavu",shop:"kavu.com",url:"https://kavu.com/products/synthetic-strapcap",price:"30",specs:["Sized S/M/L — order L","Water-resistant · UV","Pyrite / Navy / earthy"],fitNote:"One of the very few Patagonia-adjacent lifestyle brands that <b>actually sizes</b> (S/M/L, not one-size). The L crown is cut for a big head and reaches your 8.",note:"Low-profile strapcap, made in the USA, water-resistant nylon. Order L; skip the busy woven prints for solid earthy Pyrite or Navy.",imgs:["https://cdn.shopify.com/s/files/1/2113/9699/files/112_PYRITE_L1.jpg","https://cdn.shopify.com/s/files/1/2113/9699/files/112_PYRITE_L2.jpg","https://cdn.shopify.com/s/files/1/2113/9699/files/112_PYRITE_L3.jpg"]},
+  {bucket:"outdoorsy",fit:"adjustable",title:"Broadcaster High-Crown Trucker",brand:"Patagonia",shop:"patagonia.com",url:"https://www.patagonia.com/product/broadcaster-high-crown-trucker-hat/33395.html",price:"39",specs:["One-size snapback (high crown)","Organic cotton / mesh","Multiple colors"],fitNote:"One-size, but the roomiest crown Patagonia makes. A 6'4\"–6'6\" reviewer: <b>“finally a Patagonia hat that fits larger heads.”</b> Given one-size has never fit you, treat it as the best-odds gamble here — not a lock.",note:"The Patagonia you actually wanted — P-6 look, recycled materials, snapback — in the one crown tall enough to have a shot at a big head. The brand's closest thing to a fit.",imgs:["img/broadcaster_1.jpg","img/broadcaster_2.jpg","img/broadcaster_3.jpg"]},
+  {bucket:"outdoorsy",fit:"measure",title:"P-6 Logo LoPro Trucker Hat",brand:"Patagonia",shop:"patagonia.com",url:"https://www.patagonia.com/product/p-6-logo-lopro-trucker-hat/38283.html",price:"39",specs:["One-size snapback","Line caps ~24″ (≈7⅝)","White / Black / Grey / Navy"],fitNote:"The honest miss: Patagonia's line tops out at <b>24″, under your 7¾–8</b>. Best case it perches shallow. Want a Patagonia with a shot? The high-crown Broadcaster above.",note:"The iconic Patagonia trucker you probably pictured — NetPlus recycled-net brim, organic-cotton front. Shown honestly: the brand you named, but a size short for you.",imgs:["img/plopro_1.jpg","img/plopro_2.jpg","img/plopro_3.jpg"]},
   // ---------------- CRIMSON ----------------
-  {bucket:"crimson",fit:"fits",title:"Collegiate Two-Tone Chrome 59FIFTY",brand:"New Era",shop:"neweracap.com",url:"https://www.neweracap.com/products/alabama-crimson-tide-collegiate-two-tone-chrome-59fifty-fitted",price:"52.99",specs:["True fitted · size 8 in stock","Cream crown / crimson brim","Crimson script-A"],fitNote:"<b>True fitted, size 8 confirmed in stock</b> on New Era's own selector — the single most precise fit possible. No strap to guess at.",note:"The clean crimson hero. Cream crown, tidy script-A, Final Four side patch, flat brim — reads as vintage baseball, nothing like a solid-red block-text cap. Official New Era, not '47.",imgs:["https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60871234_59FIFTY_LifestyleEnergy_ALACRI_OTC_F.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60871234_59FIFTY_LifestyleEnergy_ALACRI_OTC_3QR.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60871234_59FIFTY_LifestyleEnergy_ALACRI_OTC_3QL.jpg"]},
-  {bucket:"crimson",fit:"fits",title:"College Vault Wool Letterman 59FIFTY",brand:"New Era",shop:"neweracap.com",url:"https://www.neweracap.com/products/alabama-crimson-tide-college-vault-wool-letterman-retro-crown-59fifty-fitted",price:"49.99",specs:["True fitted · size 8 in stock","Oatmeal wool / crimson brim","Vintage varsity C + elephant"],fitNote:"<b>True fitted, size 8 confirmed in stock.</b> Exact-size fit, no adjustment.",note:"The characterful one: cream wool crown, big throwback varsity “C” patch with a retro elephant. A College-Vault archive design — about as far from a modern political cap as a Bama hat gets.",imgs:["https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60767870_RC59FIFTY_LifestyleEnergy_ALACRI_OTC_3QL.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60767870_RC59FIFTY_LifestyleEnergy_ALACRI_OTC_F.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60767870_RC59FIFTY_LifestyleEnergy_ALACRI_OTC_3QR.jpg"]},
-  {bucket:"crimson",fit:"adjustable",title:"Wool Plaid 9SEVENTY Trucker",brand:"New Era",shop:"neweracap.com",url:"https://www.neweracap.com/products/alabama-crimson-tide-wool-plaid-9seventy-trucker",price:"24.69",was:"37.99",specs:["Stretch-snap A-frame","Wool plaid + mesh","On sale"],fitNote:"One-size A-frame with a <b>stretch-snap back</b> — roomier than a standard snapback. Give it a measure if you're a full 8, but the stretch closure has a good shot.",note:"The heritage-pattern play: warm wool tartan crown, brown mesh, throwback script badge. As anti-MAGA as an Alabama hat gets — and it quietly belongs in your outdoorsy rotation too.",imgs:["https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60841877_9SEVENTY_LifestyleEnergy_ALACRI_XBR_3QL.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60841877_9SEVENTY_LifestyleEnergy_ALACRI_XBR_F.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60841877_9SEVENTY_LifestyleEnergy_ALACRI_XBR_3QR.jpg"]},
-  {bucket:"crimson",fit:"measure",title:"Denim & Suede Dad Hat",brand:"Homefield",shop:"homefieldapparel.com",url:"https://www.homefieldapparel.com/products/alabama-crimson-tide-denim-and-suede-dad-hat",price:"36",specs:["One-size 7–7¾ (max 62 cm)","Washed denim + suede bill","Vintage ROLL TIDE script"],fitNote:"Runs <b>7–7¾ (max 62 cm)</b>; a true 8 is ~63.5 cm — <b>just above their ceiling</b>. Perfect if you sit nearer 7¾; likely snug at a full 8. The one to measure.",note:"The aesthetic knockout: washed-denim crown, brown suede bill, crimson only as accent — and it rhymes with the very Oddjob suede-bill you linked. 10/10 look; the fit is the catch, so it's flagged.",imgs:["https://cdn.shopify.com/s/files/1/0009/0839/4551/files/HUDSON-AL-ADJ-2TN_01.jpg","https://cdn.shopify.com/s/files/1/0009/0839/4551/files/HUDSON-AL-ADJ-2TN_02.jpg","https://cdn.shopify.com/s/files/1/0009/0839/4551/files/HUDSON-AL-ADJ-2TN_03.jpg"]},
+  {bucket:"crimson",fit:"fits",title:"Collegiate Two-Tone Chrome 59FIFTY",brand:"New Era",shop:"neweracap.com",url:"https://www.neweracap.com/products/alabama-crimson-tide-collegiate-two-tone-chrome-59fifty-fitted",price:"52.99",specs:["True fitted · size 8 in stock","Cream crown / crimson brim","Crimson script-A"],fitNote:"<b>True fitted — size 8 confirmed in stock.</b> Pick your exact number; no strap to guess at.",note:"The clean crimson hero. Cream crown, tidy script-A, Final Four side patch, flat brim — reads as vintage baseball, nothing like a solid-red block-text cap. Official New Era, not '47.",imgs:["https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60871234_59FIFTY_LifestyleEnergy_ALACRI_OTC_F.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60871234_59FIFTY_LifestyleEnergy_ALACRI_OTC_3QR.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60871234_59FIFTY_LifestyleEnergy_ALACRI_OTC_3QL.jpg"]},
+  {bucket:"crimson",fit:"fits",title:"Gray Cardinal 59FIFTY",brand:"New Era",shop:"neweracap.com",url:"https://www.neweracap.com/products/alabama-crimson-tide-gray-cardinal-59fifty-fitted",price:"49.99",specs:["True fitted · 7¾/7⅞/8 in stock","Storm-grey crown","Crimson only as accent"],fitNote:"<b>True fitted; 7¾, 7⅞ and 8 all in stock.</b> Order 7⅞ for dead-center or 8 for the top — no strap.",note:"The zero-red pick: a storm-grey crown with crimson only on the brim and button. Reads like a normal everyday cap. As far from a red political cap as a Bama hat gets. Not '47.",imgs:["https://cdn.shopify.com/s/files/1/0601/2554/4675/files/70973943_59FIFTY_COLLEGE_25_JULY_ALACRI_GRY_3QL.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/70973943_59FIFTY_COLLEGE_25_JULY_ALACRI_GRY_F.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/70973943_59FIFTY_COLLEGE_25_JULY_ALACRI_GRY_3QR.jpg"]},
+  {bucket:"crimson",fit:"fits",title:"Camel College Vault 59FIFTY",brand:"New Era",shop:"neweracap.com",url:"https://www.neweracap.com/products/alabama-crimson-tide-camel-59fifty-fitted",price:"41.99",specs:["True fitted · 7¾/7⅞/8 in stock","Camel/tan crown","Retro College-Vault script-A"],fitNote:"<b>True fitted; 7¾, 7⅞, 8 all in stock.</b> Cheapest of the fitted set — and a precise fit.",note:"Warm camel neutral with a vintage College-Vault script-A. Reads throwback-collegiate, not political — and the tan body is the opposite of a red cap. Not '47.",imgs:["https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60551495_59FIFTY_5950EGCAMCAMCAM_ALACRIVLT_CAM_3QL.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60551495_59FIFTY_5950EGCAMCAMCAM_ALACRIVLT_CAM_F.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60551495_59FIFTY_5950EGCAMCAMCAM_ALACRIVLT_CAM_3QR.jpg"]},
+  {bucket:"crimson",fit:"fits",title:"College Vault Wool Letterman 59FIFTY",brand:"New Era",shop:"neweracap.com",url:"https://www.neweracap.com/products/alabama-crimson-tide-college-vault-wool-letterman-retro-crown-59fifty-fitted",price:"49.99",specs:["True fitted · size 8 in stock","Oatmeal wool / crimson brim","Vintage varsity C + elephant"],fitNote:"<b>True fitted, size 8 in stock.</b> Exact-size fit, no adjustment.",note:"The characterful one: cream wool crown, big throwback varsity “C” patch with a retro elephant. A College-Vault archive design — about as un-political as a Bama hat gets.",imgs:["https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60767870_RC59FIFTY_LifestyleEnergy_ALACRI_OTC_3QL.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60767870_RC59FIFTY_LifestyleEnergy_ALACRI_OTC_F.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60767870_RC59FIFTY_LifestyleEnergy_ALACRI_OTC_3QR.jpg"]},
+  {bucket:"crimson",fit:"adjustable",title:"Wool Plaid 9SEVENTY Trucker",brand:"New Era",shop:"neweracap.com",url:"https://www.neweracap.com/products/alabama-crimson-tide-wool-plaid-9seventy-trucker",price:"24.69",was:"37.99",specs:["Stretch-snap A-frame","Wool plaid + mesh","On sale"],fitNote:"One-size A-frame with a <b>stretch-snap back</b> — roomier than a standard snapback, but still not a true size. Measure if you're a full 8; the stretch gives it a shot.",note:"The heritage-pattern play: warm wool tartan crown, brown mesh, a throwback script badge. As anti-MAGA as an Alabama hat gets — and it quietly belongs in your outdoorsy rotation too.",imgs:["https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60841877_9SEVENTY_LifestyleEnergy_ALACRI_XBR_3QL.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60841877_9SEVENTY_LifestyleEnergy_ALACRI_XBR_F.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/60841877_9SEVENTY_LifestyleEnergy_ALACRI_XBR_3QR.jpg"]},
+  {bucket:"crimson",fit:"measure",title:"Denim & Suede Dad Hat",brand:"Homefield",shop:"homefieldapparel.com",url:"https://www.homefieldapparel.com/products/alabama-crimson-tide-denim-and-suede-dad-hat",price:"36",specs:["One-size 7–7¾ (max 62 cm)","Washed denim + suede bill","Vintage ROLL TIDE script"],fitNote:"Runs <b>7–7¾ (max 62 cm)</b>; you're at or above their ceiling — fine at 7¾, snug-to-no at a full 8. The one to measure before you fall for it.",note:"The aesthetic knockout: washed-denim crown, brown suede bill, crimson only as accent — it even rhymes with the Oddjob suede-bill you linked. 10/10 look; the fit is the catch, so it's flagged.",imgs:["https://cdn.shopify.com/s/files/1/0009/0839/4551/files/HUDSON-AL-ADJ-2TN_01.jpg","https://cdn.shopify.com/s/files/1/0009/0839/4551/files/HUDSON-AL-ADJ-2TN_02.jpg","https://cdn.shopify.com/s/files/1/0009/0839/4551/files/HUDSON-AL-ADJ-2TN_03.jpg"]},
   // ---------------- IRREVERENT ----------------
-  {bucket:"irreverent",fit:"fits",title:"Big Dad Hat — Suede Bill (Blank)",brand:"Oddjob Hats",shop:"oddjobhats.com",url:"https://www.oddjobhats.com/products/big-dad-hat-suede-bill",price:"50",specs:["XL 7½–8¼ · XXL 8¼–9¼","“As Shown” or Blank","Denim/Green/Natural"],fitNote:"<b>The hat you linked — and it fits.</b> XL covers a size 8; XXL to 9¼.",note:"The exact reference, with the “Blank” variant you mentioned. Suede bill, unstructured profile. Get it clean, or use it as the canvas for the custom-joke move above — Oddjob's own logos are, per you, mediocre anyway.",imgs:["https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DadHatSuedeBillDenimSuede_1.jpg","https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DadHatSuedeBillGreenSuede_1.jpg","https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DadHatSuedeBillDenimSuede_5.jpg"]},
-  {bucket:"irreverent",fit:"fits",title:"Big Dad Hat — Corduroy (Blank)",brand:"Oddjob Hats",shop:"oddjobhats.com",url:"https://www.oddjobhats.com/products/big-dad-hat-corduroy",price:"45",specs:["XL 7½–8¼ · XXL 8¼–9¼","“As Shown” or Blank","Evergreen / Sand / Gold"],fitNote:"<b>Fits your 8</b> (XL). Oddjob's foundational cap, engineered for big heads.",note:"The cozy corduroy sibling of your linked hat — same big-head fit, same Blank option. Another ideal canvas for a “Solvem Probler”-style graphic that's guaranteed to fit.",imgs:["https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DadHatSuedeBillEvergreenCorduroySuede_3_63bff7fb-15b0-4484-8cf2-ba6c7225c1ed.jpg","https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DadHatSuedeBillEvergreenCorduroySuede_5_a44f40ca-d113-4972-9f6c-be07b6f5e597.jpg"]},
-  {bucket:"irreverent",fit:"adjustable",title:"SOLVEM PROBLER™ Trucker",brand:"Altru Apparel",shop:"altruapparel.com",url:"https://www.altruapparel.com/products/solvem-probler-trucker-hat",price:"38",specs:["Structured trucker + mesh","Snapback","Navy / Green / Black"],fitNote:"Snapback + mesh <b>stretches larger</b> than the low-profile version — the big-head-friendly build of the two. Verify the snap reaches ~25″ if you're a full 8.",note:"Your exact reference joke, from the original maker — the mock-Latin “SOLVEM PROBLER” pun. 4.5★ across 52 reviews (one just says: “there is no funnier hat”). The trucker is the version that fits a bigger head.",imgs:["https://cdn.shopify.com/s/files/1/0153/2317/files/Alt5249-NV-front_33769ef7-a3c6-465d-9395-9bf3f5dac18c.jpg","https://cdn.shopify.com/s/files/1/0153/2317/files/Alt5249-NV-L-side_2e14abdf-d206-4054-89d9-cb8035bafd67.jpg"]},
-  {bucket:"irreverent",fit:"adjustable",title:"“Out of Office” Dad Hat",brand:"Inside Joke Apparel",shop:"insidejokeapparel.com",url:"https://www.insidejokeapparel.com/products/out-of-office-garment-washed-baseball-cap",price:"36",specs:["Fits 55–64 cm","Garment-washed cotton","Navy / Maroon / Dusty Rose"],fitNote:"Stated range reaches <b>64 cm — a hair above your 8</b> at max strap. One of the rare witty one-size dad hats whose strap actually clears your head.",note:"Deadpan corporate-burnout wit on a soft washed low-profile cap. Dry, clever, universally legible — and, unlike most novelty caps, built to a range that reaches your size.",imgs:["https://cdn.shopify.com/s/files/1/0943/1865/7814/files/33.jpg","https://cdn.shopify.com/s/files/1/0943/1865/7814/files/ACS_4312.jpg"]},
-  {bucket:"irreverent",fit:"measure",title:"“Solvem Probler” Low-Profile 6-Panel",brand:"Altru Apparel",shop:"altruapparel.com",url:"https://www.altruapparel.com/products/solvem-probler-6-panel-low-profile-embroidered-hat",price:"35",specs:["Unstructured low-profile","One-size buckle strap","7 colorways"],fitNote:"The <b>exact flat silhouette</b> you described — but one-size low-profiles usually stop ~23.5″, so likely <b>snug on a true 8</b>. Measure, size up to the trucker, or run the joke on an Oddjob blank.",note:"Same pun, in the precise low-profile dad-hat shape you referenced, in seven colors. The look is perfect; the fit is the risk — which is exactly what the “buy it Blank” fix above is for.",imgs:["https://cdn.shopify.com/s/files/1/0153/2317/files/ALT4256_Solvem-Probler-DAD-HAT-MUST.jpg","https://cdn.shopify.com/s/files/1/0153/2317/files/SOLVEMPROBLER-HUNTER-FRONT.jpg"]}
+  {bucket:"irreverent",fit:"fits",title:"SpongeBob SquarePants 59FIFTY",brand:"New Era",shop:"neweracap.com",url:"https://www.neweracap.com/products/spongebob-squarepants-navy-59fifty-fitted",price:"49.99",specs:["True fitted · size 8 in stock","Navy · SpongeBob embroidery","Structured, flat brim"],fitNote:"<b>A true-fitted 59FIFTY in size 8</b> — genuinely goofy AND actually your size. No strap to fight.",note:"Proof that “fitted” and “funny” can coexist: a licensed New Era 59FIFTY you buy in a real size 8. Navy crown, SpongeBob up front, Bikini Bottom out back. (South Park and Rick & Morty 59FIFTYs also come in 8.)",imgs:["https://cdn.shopify.com/s/files/1/0601/2554/4675/files/70483849_59FIFTY_SPONGEBOBBASICS_SPONGEBOB_NAV_3QL.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/70483849_59FIFTY_SPONGEBOBBASICS_SPONGEBOB_NAV_F.jpg","https://cdn.shopify.com/s/files/1/0601/2554/4675/files/70483849_59FIFTY_SPONGEBOBBASICS_SPONGEBOB_NAV_3QR.jpg"]},
+  {bucket:"irreverent",fit:"fits",title:"Custom Embroidery Fitted — Size 8, Your Text",brand:"KB Ethos · empowerprinting",shop:"etsy.com",url:"https://www.etsy.com/listing/1856358424/custom-embroidery-kb-ethos-fitted-hat",price:"24.95",specs:["True-fitted · Size 8","Your custom embroidered text","Curved bill, high profile"],fitNote:"<b>A genuine size-8 fitted you personalize</b> — the cleanest “your joke at a real fit.” Put “Solvem Probler” (or anything) on a hat actually built for a size-8 head.",note:"The bucket's real unlock: the funniest stock designs are all one-size, so put YOUR line on a true size-8 fitted instead. From empowerprinting — a shop with 4.8★ across 4,800+ reviews. ~$25 plus your text.",imgs:["https://i.etsystatic.com/9415706/r/il/f95a75/6625911644/il_794xN.6625911644_9k5n.jpg","https://i.etsystatic.com/9415706/r/il/bd42dc/6625911622/il_794xN.6625911622_r6ay.jpg","https://i.etsystatic.com/9415706/r/il/9b6dcf/6673989515/il_794xN.6673989515_9szz.jpg"]},
+  {bucket:"irreverent",fit:"fits",title:"Big Dad Hat — Suede Bill (Blank)",brand:"Oddjob Hats",shop:"oddjobhats.com",url:"https://www.oddjobhats.com/products/big-dad-hat-suede-bill",price:"50",specs:["XL 7½–8¼ · XXL 8¼–9¼","“As Shown” or Blank","Denim/Green/Natural"],fitNote:"<b>The hat you linked — and it's genuinely sized.</b> XL covers your 7¾–8; XXL to 9¼.",note:"The exact reference, with the “Blank” variant you mentioned. Suede bill, unstructured profile. Get it clean, or use it as the canvas for the custom-joke move above — Oddjob's own logos are, per you, mediocre anyway.",imgs:["https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DadHatSuedeBillDenimSuede_1.jpg","https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DadHatSuedeBillGreenSuede_1.jpg","https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DadHatSuedeBillDenimSuede_5.jpg"]},
+  {bucket:"irreverent",fit:"fits",title:"Big Dad Hat — Corduroy (Blank)",brand:"Oddjob Hats",shop:"oddjobhats.com",url:"https://www.oddjobhats.com/products/big-dad-hat-corduroy",price:"45",specs:["XL 7½–8¼ · XXL 8¼–9¼","“As Shown” or Blank","Evergreen / Sand / Gold"],fitNote:"<b>Genuinely sized</b> (XL covers your 7¾–8). Oddjob's foundational cap, built for big heads.",note:"The cozy corduroy sibling of your linked hat — same big-head sizing, same Blank option. Another ideal canvas for a “Solvem Probler”-style graphic that's guaranteed to fit.",imgs:["https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DadHatSuedeBillEvergreenCorduroySuede_3_63bff7fb-15b0-4484-8cf2-ba6c7225c1ed.jpg","https://cdn.shopify.com/s/files/1/0254/2606/7509/files/DadHatSuedeBillEvergreenCorduroySuede_5_a44f40ca-d113-4972-9f6c-be07b6f5e597.jpg"]},
+  {bucket:"irreverent",fit:"adjustable",title:"SOLVEM PROBLER™ Trucker",brand:"Altru Apparel",shop:"altruapparel.com",url:"https://www.altruapparel.com/products/solvem-probler-trucker-hat",price:"38",specs:["Structured trucker + mesh","Snapback","Navy / Green / Black"],fitNote:"Snapback + mesh <b>stretches larger</b> than the low-profile version — the big-head-friendlier of Altru's two builds. Still one-size, so measure the snap's reach if you're a full 8.",note:"Your exact reference joke, from the original maker — the mock-Latin “SOLVEM PROBLER” pun. 4.5★ across 52 reviews (one just says: “there is no funnier hat”). The trucker is the roomier version.",imgs:["https://cdn.shopify.com/s/files/1/0153/2317/files/Alt5249-NV-front_33769ef7-a3c6-465d-9395-9bf3f5dac18c.jpg","https://cdn.shopify.com/s/files/1/0153/2317/files/Alt5249-NV-L-side_2e14abdf-d206-4054-89d9-cb8035bafd67.jpg"]},
+  {bucket:"irreverent",fit:"adjustable",title:"“Out of Office” Dad Hat",brand:"Inside Joke Apparel",shop:"insidejokeapparel.com",url:"https://www.insidejokeapparel.com/products/out-of-office-garment-washed-baseball-cap",price:"36",specs:["Fits 55–64 cm","Garment-washed cotton","Navy / Maroon / Dusty Rose"],fitNote:"Stated range reaches <b>64 cm — a hair above your 8</b> at max strap. One of the rare witty one-size dad hats whose strap actually clears your head — but it's one-size, so it's a roomy gamble.",note:"Deadpan corporate-burnout wit on a soft washed low-profile cap. Dry, clever, universally legible — and, unlike most novelty caps, built to a range that reaches your size.",imgs:["https://cdn.shopify.com/s/files/1/0943/1865/7814/files/33.jpg","https://cdn.shopify.com/s/files/1/0943/1865/7814/files/ACS_4312.jpg"]},
+  {bucket:"irreverent",fit:"measure",title:"“Solvem Probler” Low-Profile 6-Panel",brand:"Altru Apparel",shop:"altruapparel.com",url:"https://www.altruapparel.com/products/solvem-probler-6-panel-low-profile-embroidered-hat",price:"35",specs:["Unstructured low-profile","One-size buckle strap","7 colorways"],fitNote:"The <b>exact flat silhouette</b> you described — but one-size low-profiles usually stop ~23.5″, so likely <b>too snug on a true 8</b>. Steal the phrase; put it on a sized blank instead.",note:"Same pun, in the precise low-profile dad-hat shape you referenced, in seven colors. The look is perfect; the fit is the risk — which is exactly what the KB Ethos / Oddjob-blank fix above is for.",imgs:["https://cdn.shopify.com/s/files/1/0153/2317/files/ALT4256_Solvem-Probler-DAD-HAT-MUST.jpg","https://cdn.shopify.com/s/files/1/0153/2317/files/SOLVEMPROBLER-HUNTER-FRONT.jpg"]}
 ];
 
-const FITLABEL = {fits:{t:"Fits your 8",ic:"●"},adjustable:{t:"Opens to your 8",ic:"◐"},measure:{t:"Measure first",ic:"▲"}};
+const FITLABEL = {fits:{t:"Sized to fit you",ic:"●"},adjustable:{t:"Roomy one-size",ic:"◐"},measure:{t:"Runs snug",ic:"▲"}};
 const esc = s => (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 
 function card(s){
@@ -296,7 +288,7 @@ function render(){
   document.getElementById("c-adjustable").textContent = n("adjustable");
   document.getElementById("c-measure").textContent = n("measure");
   document.getElementById("pill-total").textContent = SETS.length+" hats";
-  document.getElementById("pill-fits").innerHTML = `<span>✓</span> ${n("fits")} fit confirmed`;
+  document.getElementById("pill-fits").innerHTML = `<span>●</span> ${n("fits")} truly sized`;
 }
 function swap(t,u){t.closest(".card").querySelector(".main").src=u;t.closest(".card").querySelector(".main").setAttribute("onclick",`zoom('${u}')`);t.parentElement.querySelectorAll("img").forEach(i=>i.classList.remove("sel"));t.classList.add("sel");}
 function zoom(u){const lb=document.getElementById("lb");document.getElementById("lbimg").src=u;lb.classList.add("on");}
@@ -306,7 +298,6 @@ document.querySelectorAll(".chip").forEach(c=>c.addEventListener("click",()=>{
   document.body.dataset.filter=c.dataset.f;
 }));
 
-// theme toggle
 const tb=document.getElementById("themebtn");
 tb.addEventListener("click",()=>{
   const cur=document.documentElement.getAttribute("data-theme")|| (matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");
