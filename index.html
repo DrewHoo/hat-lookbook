@@ -6,11 +6,28 @@
 <title>The Big-Head Hat Lookbook</title>
 <meta name="description" content="A curated hat lookbook for a measured 7¾–8 head — Patagonia-outdoorsy, Crimson Tide (no MAGA, no '47), and irreverent — every listing verified live and sorted by whether it comes in your real size.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A2%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="https://drewhoover.com/hat-lookbook/">
+
+<!-- Social preview. og:image MUST be an absolute URL: scrapers are handed the
+     content value verbatim and never resolve it against the page, so a bare
+     "og.png" silently yields no preview card. Absolute on drewhoover.com, not
+     drewhoo.github.io — the latter 301s here, and redirects lose some scrapers. -->
+<meta property="og:site_name" content="The Big-Head Hat Lookbook">
 <meta property="og:title" content="The Big-Head Hat Lookbook">
 <meta property="og:description" content="43 hats verified live and sorted by whether they come in a real size 7¾–8: Patagonia-outdoorsy, Crimson Tide without the MAGA look, and irreverent.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="og.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://drewhoover.com/hat-lookbook/">
+<meta property="og:image" content="https://drewhoover.com/hat-lookbook/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Big-Head Hat Lookbook — the three coolest picks, one per vibe: Oddjob's Big Camp Hat, New Era's Alabama melton wool 59FIFTY, and Ebbets' Clearing Question Marks 1941 ballcap.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Big-Head Hat Lookbook">
+<meta name="twitter:description" content="43 hats verified live and sorted by whether they come in a real size 7¾–8: Patagonia-outdoorsy, Crimson Tide without the MAGA look, and irreverent.">
+<meta name="twitter:image" content="https://drewhoover.com/hat-lookbook/og.png">
+<meta name="twitter:image:alt" content="The three coolest hats in the lookbook, one per vibe.">
 <style>
   :root{
     --bg:#f4f1ea; --bg2:#ece7db; --ink:#211d18; --ink2:#5c5347; --line:#ddd5c6;
@@ -50,12 +67,49 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
   header.mast{padding:56px 20px 30px;text-align:center;position:relative}
   .kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink2);font-weight:600}
+  .kicker a{color:inherit;text-decoration:none;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent);transition:.15s}
+  .kicker a:hover{border-bottom-color:currentColor}
   h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.3rem,6vw,4rem);line-height:1.02;margin:.35em 0 .3em;letter-spacing:-.01em}
   .sub{max-width:660px;margin:0 auto;color:var(--ink2);font-size:clamp(1rem,2.4vw,1.18rem)}
   .sub b{color:var(--ink);font-weight:600}
   .pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:22px 0 0}
   .pill{background:var(--card);border:1px solid var(--card-line);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;box-shadow:var(--shadow)}
   .pill span{color:var(--ink2);font-weight:500}
+  .top3{margin:34px auto 4px}
+  .t3head{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap;margin-bottom:15px}
+  .t3tag{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:5px 12px;border-radius:999px;background:var(--ink);color:var(--bg)}
+  .t3head h2{font-family:var(--serif);font-size:clamp(1.35rem,3vw,1.85rem);margin:0;font-weight:600;line-height:1.1}
+  .t3head p{margin:0;color:var(--ink2);font-size:14px;flex-basis:100%;max-width:82ch}
+  .t3head p b{color:var(--ink);font-weight:600}
+  .t3grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .t3card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--card-line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:transform .18s ease,box-shadow .18s ease}
+  .t3card:hover{transform:translateY(-3px);box-shadow:0 4px 10px rgba(40,32,20,.08),0 18px 44px rgba(40,32,20,.14)}
+  /* cover, not contain: the source shots are square/portrait on their own
+     white or grey backdrops, so contain letterboxes each one as a visible box
+     inside the card. 4/3 is the widest ratio that still cover-crops all three
+     without clipping the Big Camp Hat's brim (it reaches 85% of frame height). */
+  .t3img{aspect-ratio:4/3;background:#fff;overflow:hidden}
+  :root[data-theme="dark"] .t3img{background:#f3f0ea}
+  @media (prefers-color-scheme:dark){.t3img{background:#f3f0ea}}
+  .t3img img{width:100%;height:100%;object-fit:cover;display:block}
+  .t3body{padding:13px 15px 15px;display:flex;flex-direction:column;flex:1}
+  .t3vibe{align-self:flex-start;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:999px;margin-bottom:9px}
+  .t3card[data-b="outdoorsy"] .t3vibe{background:var(--fits-bg);color:var(--fits)}
+  .t3card[data-b="crimson"] .t3vibe{background:#f0dcda;color:#8f2d2a}
+  .t3card[data-b="irreverent"] .t3vibe{background:#e7e0f0;color:#5a4b86}
+  @media (prefers-color-scheme:dark){
+    .t3card[data-b="crimson"] .t3vibe{background:#38201f;color:#e59b98}
+    .t3card[data-b="irreverent"] .t3vibe{background:#26203a;color:#b8a6e6}
+  }
+  :root[data-theme="dark"] .t3card[data-b="crimson"] .t3vibe{background:#38201f;color:#e59b98}
+  :root[data-theme="dark"] .t3card[data-b="irreverent"] .t3vibe{background:#26203a;color:#b8a6e6}
+  .t3card h3{font-family:var(--serif);font-size:1.15rem;margin:0 0 3px;font-weight:600;line-height:1.15}
+  .t3brand{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);font-weight:700}
+  .t3why{font-size:13px;color:var(--ink2);line-height:1.5;margin:9px 0 12px;flex:1}
+  .t3why b{color:var(--ink);font-weight:600}
+  .t3foot{margin-top:auto;display:flex;align-items:baseline;gap:9px}
+  .t3foot .price{font-size:1.1rem;font-weight:700}
+  .t3size{font-size:12px;color:var(--fits);font-weight:700}
   .lens{max-width:var(--maxw);margin:26px auto 8px;padding:18px 20px;background:var(--card);border:1px solid var(--card-line);border-radius:var(--radius);box-shadow:var(--shadow)}
   .lens-top{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
   .lens h2{font-size:15px;margin:0;font-weight:700;display:flex;align-items:center;gap:9px}
@@ -141,6 +195,7 @@
   .lb.on{display:flex}
   .lb img{max-width:94vw;max-height:90vh;object-fit:contain;border-radius:10px;background:#fff}
   .lb .x{position:absolute;top:18px;right:24px;color:#fff;font-size:34px;cursor:pointer;line-height:1}
+  @media(max-width:900px){.t3grid{grid-template-columns:1fr}}
   @media(max-width:640px){
     .lens-top{flex-direction:column;align-items:flex-start}
     .chips{margin-left:0}
@@ -153,7 +208,7 @@
 <button class="themebtn" id="themebtn" title="Toggle light/dark" aria-label="Toggle theme">◑</button>
 
 <header class="mast">
-  <div class="kicker">A shopping lookbook · built around a big-head fit</div>
+  <div class="kicker"><a href="https://github.com/DrewHoo/shopping-lookbook" target="_blank" rel="noopener">A shopping lookbook</a> · built around a big-head fit</div>
   <h1>The Big-Head<br>Hat Lookbook</h1>
   <p class="sub">Caps across three moods — <b>Patagonia-outdoorsy</b>, <b>Crimson&nbsp;Tide</b> (no MAGA, no&nbsp;'47), and <b>irreverent</b> — every listing verified live and sorted by the one thing that matters for a measured <b>7¾–8</b> head: <b>whether it comes in your real size.</b> Because no one-size hat has ever fit you.</p>
   <div class="pills">
@@ -163,6 +218,15 @@
     <div class="pill"><span>verified</span> Jul 2026</div>
   </div>
 </header>
+
+<section class="top3 wrap" id="top3">
+  <div class="t3head">
+    <span class="t3tag">The three coolest</span>
+    <h2>If you only look at three</h2>
+    <p>One from each vibe — which is not a gimmick, it's just how it shook out. These are the three that best answer the whole brief at once: real character on the front, and a <b>real size printed on the box</b>. Every one of them is <b>sized to fit you</b>, so none is a gamble.</p>
+  </div>
+  <div class="t3grid" data-grid="top3"></div>
+</section>
 
 <div class="lens wrap">
   <div class="lens-top">
@@ -279,6 +343,34 @@ const SETS = [
 const FITLABEL = {fits:{t:"Sized to fit you",ic:"●"},adjustable:{t:"Roomy one-size",ic:"◐"},measure:{t:"Runs snug",ic:"▲"}};
 const esc = s => (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 
+// The three coolest, keyed by title so price/image/brand/link stay owned by
+// SETS and can't drift. `size` is the short size line for the pick card; the
+// full fit story stays on the hat's own card below.
+const VIBENAME = {outdoorsy:"Vibe 01 · Outdoorsy",crimson:"Vibe 02 · Crimson Tide",irreverent:"Vibe 03 · Irreverent"};
+const TOP3 = [
+  {title:"Big Camp Hat",size:"XL 7½–8¼",
+   why:"The trail-casual 5-panel from the one brand that exists for heads like yours — and the <b>safest buy on this page</b>: both sizes, all eight colors, in stock at last check. Get it Blank if the logo bugs you."},
+  {title:"Melton Wool 59FIFTY",size:"Fitted 7¾ · 7⅞",
+   why:"Winter-weight varsity wool in deep team crimson over a black brim — <b>Roll Tide with none of the red-cap read</b>, and the cheapest true fitted in the whole lookbook."},
+  {title:"Clearing Question Marks 1941 Wool Ballcap",size:"Fitted 7¾ · 7⅞ · 8",
+   why:"A real 1941 Chicago team whose entire identity is a question mark. Nobody knows why. The rare hat where genuine wit and <b>a genuine size 8</b> coexist — though the 7⅞ and 8 were down to one each."},
+];
+
+function top3card(p){
+  const s = SETS.find(x=>x.title===p.title);
+  if(!s){console.warn("TOP3: no hat in SETS titled",p.title);return "";}
+  return `<a class="t3card" data-b="${s.bucket}" href="${s.url}" target="_blank" rel="noopener">
+    <div class="t3img"><img src="${s.imgs[0]}" alt="${esc(s.brand)} ${esc(s.title)}"></div>
+    <div class="t3body">
+      <div class="t3vibe">${VIBENAME[s.bucket]}</div>
+      <h3>${esc(s.title)}</h3>
+      <div class="t3brand">${esc(s.brand)}</div>
+      <p class="t3why">${p.why}</p>
+      <div class="t3foot"><span class="price">$${s.price}</span><span class="t3size">${esc(p.size)}</span></div>
+    </div>
+  </a>`;
+}
+
 function card(s){
   const fl = FITLABEL[s.fit];
   const thumbs = s.imgs.length>1 ? `<div class="thumbs">${s.imgs.map((u,i)=>`<img src="${u}" class="${i===0?'sel':''}" alt="" loading="lazy" onclick="swap(this,'${u}')">`).join("")}</div>` : "";
@@ -303,6 +395,7 @@ function card(s){
 }
 
 function render(){
+  document.querySelector('[data-grid="top3"]').innerHTML = TOP3.map(top3card).join("");
   ["outdoorsy","crimson","irreverent"].forEach(b=>{
     const el = document.querySelector(`[data-grid="${b}"]`);
     el.innerHTML = SETS.filter(s=>s.bucket===b).map(card).join("");
